@@ -1,0 +1,19 @@
+<div class="container" id="shop">
+  <div class="row">
+    @for(item of district; track item.id){
+      
+      <div class="col-lg-4 pt-3">
+        <div class="card" style="width: 18 rem;">
+        <img src= "{{ item.image }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.dis| slice:0:300}}....</p>
+         <a href="{{item.wiki}}" class="btn btn-primary">go</a>
+        
+          
+        </div>
+      </div>
+      </div>
+    }
+  </div>
+</div>
